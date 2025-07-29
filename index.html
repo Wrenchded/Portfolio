@@ -5,101 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Aditya Sarmalkar</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header with Navigation -->
     <header>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="burger-menu" id="burger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">My Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
     </header>
     
-    <!-- Home Section -->
     <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Data Science Enthusiast | Turning Data into Insights</p>
-        <img src="WhatsApp Image 2024-11-01 at 10.49.33.jpeg" alt="Profile Picture">
+        <div class="container">
+            <h1>ADITYA SARMALKAR</h1>
+            <p>Data Science Enthusiast | Transforming Data into Strategic Insights</p>
+            <img src="WhatsApp Image 2024-11-01 at 10.49.33.jpeg" alt="Aditya Sarmalkar - Profile Picture">
+        </div>
     </section>
     
-    <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <div class="about-box">
-            <div class="about-content">
-                <p>I'm a passionate college student, immersing myself in the world of data science with a drive to extract meaningful insights from data. Proficient in Python, machine learning, and data visualization, I enjoy creating impactful projects that bridge the gap between complex data and practical applications.</p>
-                <p>With hands-on experience in several projects, I’m continuously exploring new technologies and techniques to expand my knowledge. My goal is to leverage data science to make valuable contributions and drive change in various fields.</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-box">
+                <div class="about-content">
+                    <p>I am a dedicated college student deeply immersed in the realm of data science, driven by the ambition to extract profound and actionable insights from complex datasets. With proficiency in Python, advanced machine learning techniques, and sophisticated data visualization, I am passionate about crafting impactful solutions that bridge the gap between raw data and practical, high-value applications.</p>
+                    <p>My portfolio showcases hands-on experience across a diverse range of projects, reflecting a continuous pursuit of knowledge in emerging technologies and analytical methodologies. My ultimate objective is to leverage the transformative power of data science to contribute significantly and drive meaningful change across various industries.</p>
+                </div>
             </div>
         </div>
     </section>
     
-    <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <div class="skill-item">Python</div>
-            <div class="skill-item">Machine Learning</div>
-            <div class="skill-item">Data Visualization</div>
-            <div class="skill-item">SQL</div>
-            <div class="skill-item">Java</div>
-            <div class="skill-item">Data Analysis</div>
-            <div class="skill-item">MongoDB</div>
-            <div class="skill-item">HTML</div>
-            <div class="skill-item">CSS</div>
-            <div class="skill-item">C/C++</div>
+        <div class="container">
+            <h2>Core Competencies</h2>
+            <div class="skills-list">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Machine Learning</div>
+                <div class="skill-item">Data Visualization</div>
+                <div class="skill-item">MySQL</div>
+                <div class="skill-item">Data Science</div>
+                <div class="skill-item">Data Analysis</div>
+                <div class="skill-item">MongoDB</div>
+                <div class="skill-item">Microsoft PowerPlatform</div>
+                <div class="skill-item">Artificial Intelligence</div>
+                <div class="skill-item">Streamlit</div>
+                <div class="skill-item">Generative AI</div>
+            </div>
         </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>My Experience</h2>
+            <div class="experience-item">
+                <h3>Business Analyst Intern</h3>
+                <h4>SKM Air Conditioning LLC, Sharjah, United Arab Emirates</h4>
+                <p class="duration">23rd December 2024 – 23rd January 2025</p>
+
+                <div class="experience-main-visual">
+                    <img src="skm.jpg" alt="Screenshot of SKM Internship Project" loading="lazy">
+                    <p class="image-caption">Overview of the Power Apps maintenance scheduling interface developed during the internship.</p>
+                </div>
+                
+                <div class="experience-buttons-group"> <a href="skm_ss.html" class="button">View Project Screenshots</a>
+                    <a href="certificate.jpeg" class="button" target="_blank" rel="noopener noreferrer">View Certificate</a> </div>
+                <ul class="experience-description">
+                    <li>Designed and developed a custom preventive maintenance scheduling application using Power Apps, enabling efficient task assignment and tracking for machines with complex checklists and frequency-based tasks. </li>
+                    <li>Explored Power Automate workflows to understand automated notifications, maintenance history updates, and process efficiency enhancements.</li>
+                    <li>Created an interactive and user-friendly interface to manage tasks, ensuring seamless assignment to technicians via dropdown menus.</li>
+                    <li>Leveraged SharePoint as a backend database to store and retrieve maintenance data, enabling centralized task management and real-time updates.</li>
+                    <li>Gained knowledge and exposure to ERP systems (Infor) and SKM’s in-house portal, enhancing understanding of process design and internal workflows in the HVAC industry.</li>
+                    <li>Strengthened collaboration between maintenance teams and supervisors by implementing data visualization tools and task-tracking solutions.</li>
+                </ul>
+            </div>
+            </div>
     </section>
     
     <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-container">
-            <a href="KIRAYA.html" class="project">
-                <img src="KIRAYA_transparent.png" alt="Project 1 Description">
-                <h3>KIRAYA - Hustle Free Travel</h3>
-                <p>KIRAYA is a public transportation service designed specifically for Delhi Transport Corporation (DTC) buses. It aims to simplify fare management, enhance the commuter experience, and provide a digital solution for seamless transit. KIRAYA includes features like an e-wallet for easy balance top-ups, KIRAYA cards for convenient fare payments, a real-time vehicle tracking system, and dedicated profiles for passengers and ticket collectors.</p>
-            </a>
-            <a href="AUTOMALL.html" class="project">
-                <img src="AUTOMALL-removebg-preview (1).png" alt="Project 2 Description">
-                <h3>AUTOMALL - Premium Automotive Dealership</h3>
-                <p>Automall is a dealership management system tailored for exotic and sports cars, with a focus on managing and facilitating the sale of both new and pre-owned high-performance vehicles. This platform allows users to browse, book, and inquire about cars, offering a premium experience with dedicated pages for luxury brands and models.</p>
-            </a>
-            <a href="TOYOTA.html" class="project">
-                <img src="Toyota-Logo-500x500.png" alt="Project 3 Description">
-                <h3>TOYOTA - Car Dealership Management System</h3>
-                <p>This dealership management system is tailored specifically for Toyota, aimed at providing a comprehensive platform for users to explore, book test drives, and inquire about new Toyota models. The system prioritizes user convenience and engages potential buyers through features that showcase Toyota’s range, including SUVs, sedans, and hybrids, to meet various customer needs.</p>
-            </a>
-            <a href="FORD.html" class="project">
-                <img src="png-transparent-ford-logo-ford-motor-company-car-ford-mustang-chrysler-ford-logo-icon-miscellaneous-emblem-trademark-removebg-preview.png" alt="Project 4 Description">
-                <h3>FORD - Car Price Prediction System - Machine Learning model using EDA</h3>
-                <p>This project is a machine learning model designed to predict the prices of Ford cars based on various features in the dataset. By applying Exploratory Data Analysis (EDA) and predictive modeling, this system provides accurate pricing insights that can aid in decision-making for both buyers and sellers. The model leverages data visualization and feature engineering techniques to enhance prediction accuracy.</p>
-            </a>
-            <!-- Add more projects as needed -->
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-container">
+                <a href="kiraya_project_page.html" class="project">
+                    <img src="KIRAYA_transparent.png" alt="KIRAYA - Hustle Free Travel">
+                    <h3>KIRAYA - Smart Urban Mobility</h3>
+                    <p>KIRAYA reimagines public transportation, specifically for DTC buses, by streamlining fare management and elevating the commuter experience. This digital solution features an e-wallet, intelligent fare cards, real-time vehicle tracking, and tailored profiles for both passengers and ticket collectors, ensuring seamless transit.</p>
+                </a>
+                <a href="autoverse_project_page.html" class="project">
+                    <img src="AutoVerse_logo.png" alt="AUTOMALL - Premium Automotive Dealership">
+                    <h3>AUTOVERSE - AI Car Showroom</h3>
+                    <p>Autoverse is a bespoke dealership management system designed for the discerning exotic and sports car market. It meticulously manages and facilitates the sale of both new and pre-owned high-performance vehicles, offering a truly premium Browse, booking, and inquiry experience with dedicated showcases for luxury marques.</p>
+                </a>
+                <a href="pdf_mind.html" class="project">
+                    <img src="pdf_mind_logo.png" alt="PDF Mind">
+                    <h3>PDF Mind - Analyze and Chat with PDF</h3>
+                    <p>PDF Mind is a smart, privacy-first AI tool that lets you chat with your PDF files. It runs locally on your device, so your data stays safe. Just upload a PDF, ask questions, and get instant answers — perfect for students, professionals, and researchers.</p>
+                </a>
+                <a href="audiofy.html" class="project">
+                    <img src="audiofy_new.png" alt="FORD - Car Price Prediction System">
+                    <h3>Audiofy - Youtube MP3 Downloader</h3>
+                    <p>Audiofy is a sleek and user-friendly web app that allows you to convert YouTube videos into high-quality MP3 audio files with just one click. Designed for speed and simplicity, it works seamlessly across devices — no ads, no subscriptions. Built using Python, Flask, and yt-dlp, Audiofy ensures smooth performance and an effortless experience, letting you enjoy your favorite tracks offline anytime, anywhere.</p>
+                </a>
+                <a href="ford_car_pred.html" class="project">
+                    <img src="png-transparent-ford-logo-ford-motor-company-car-ford-mustang-chrysler-ford-logo-icon-miscellaneous-emblem-trademark-removebg-preview.png" alt="FORD - Car Price Prediction System">
+                    <h3>FORD Car Price Prediction System</h3>
+                    <p>This project features a sophisticated machine learning model engineered to accurately predict Ford car prices using comprehensive dataset features. Through rigorous Exploratory Data Analysis (EDA) and predictive modeling, the system delivers precise pricing insights, invaluable for both buyers and sellers, enhanced by advanced visualization and feature engineering.</p>
+                </a>
+                <a href="toyota.html" class="project">
+                    <img src="Toyota-Logo-500x500.png" alt="FORD - Car Price Prediction System">
+                    <h3>TOYOTA - Integrated Dealership Platform</h3>
+                    <p>This comprehensive dealership management system is precisely engineered for Toyota, offering an intuitive platform for clients to explore, schedule test drives, and inquire about the latest Toyota models. It prioritizes user convenience and engagement, showcasing Toyota's diverse range, from SUVs to hybrids.</p>
+                </a>
+                </div>
         </div>
     </section>
+
     
-    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <div class="container">
+            <h2>Connect With Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Full Name" required>
+                <input type="email" placeholder="Your Professional Email" required>
+                <textarea placeholder="Your Message or Inquiry" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
-        <!-- Footer Section -->
-        <footer>
-            <p>&copy; 2024 Portfolio. All rights reserved.</p>
-            <p>Designed by Aditya Sarmalkar</p>
-        </footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aditya Sarmalkar. All rights reserved.</p>
+        </div>
+    </footer>
     
-    </body>
-    </html>
-
     <script src="script.js"></script>
 </body>
 </html>

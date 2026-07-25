@@ -3,55 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autoverse - Coming Soon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f0f8ff; /* Alice Blue background */
-            color: #333;
-            text-align: center;
-        }
-
-        .container {
-            padding: 30px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-            max-width: 600px;
-            width: 90%;
-            border-top: 5px solid #28a745; /* Green accent */
-        }
-
-        h1 {
-            color: #28a745; /* Green heading */
-            font-size: 2.5em;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 25px;
-        }
-
-        .project-name {
-            font-weight: bold;
-            color: #1e7e34;
-        }
-    </style>
+    <title>AutoVerse | Aditya Sarmalkar</title>
+    <link rel="stylesheet" href="autoverse.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <h1>Autoverse Project</h1>
-        <p>This page will showcase the <span class="project-name">"Autoverse"</span> project, with screenshots and detailed content on its features, functionality, and development insights.</p>
-        <p>More information is coming soon!</p>
-    </div>
+<body class="theme-auto">
+    <header class="sub-page-header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="back-to-home">← Back to Portfolio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="screenshots-page">
+        <div class="container">
+
+            <!-- ============================================================
+                 SHOWROOM HERO — edit heading, description, and spec chips.
+                 The "Digital Showroom" label above the heading is automatic.
+                 ============================================================ -->
+            <div class="showroom-hero">
+                <h2>AutoVerse — AI-Powered Automotive Marketplace</h2>
+                <p class="page-description">
+                    A full-stack automotive marketplace enabling vehicle browsing, comparison, rentals,
+                    test-drive booking, and listing management, with ML-driven used-car price prediction
+                    and an AI-powered recommendation engine. Includes MobileNetV2-based vehicle damage
+                    detection and an immersive 3D virtual showroom for exploring every vehicle up close.
+                </p>
+
+                <!-- Quick-glance feature badges — add/remove as needed -->
+                <div class="spec-chips">
+                    <span class="spec-chip">3D Virtual Showroom</span>
+                    <span class="spec-chip">ML Price Prediction</span>
+                    <span class="spec-chip">Damage Detection AI</span>
+                    <span class="spec-chip">Smart Recommendations</span>
+                </div>
+            </div>
+
+            <!-- Optional tech-stack row. Add/remove <span> tags as needed, or delete this whole div. -->
+            <div class="tech-tags page-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">MobileNetV2</span>
+            </div>
+
+            <div class="road-divider"></div>
+
+            <!-- ============================================================
+                 SCREENSHOT GALLERY — this is the part you'll edit most.
+
+                 To add a screenshot:
+                   1. Copy one whole <div class="screenshot-item"> ... </div> block
+                   2. Update the frame number span (01, 02, 03…) — purely cosmetic
+                   3. Change "src" to your image filename
+                   4. Change "alt" to a short plain description (for accessibility)
+                   5. Write your own caption inside <p class="screenshot-caption">
+
+                 Duplicate the block for more screenshots — the gallery wraps
+                 automatically (2 columns on desktop/iPad, 1 column on phones).
+                 To remove a screenshot, delete its whole block.
+                 ============================================================ -->
+            <div class="screenshot-gallery">
+
+                <div class="screenshot-item">
+                    <span class="frame-number">01</span>
+                    <img src="Explore Cars Page.png" alt="Replace with a short description of this screenshot" loading="lazy">
+                    <p class="screenshot-caption">Write what this screen shows — e.g. the homepage showcasing featured listings and search filters.</p>
+                </div>
+
+                <div class="screenshot-item">
+                    <span class="frame-number">02</span>
+                    <img src="Test_Drive_Booking.png" alt="Replace with a short description of this screenshot" loading="lazy">
+                    <p class="screenshot-caption">Write what this screen shows — e.g. the 3D virtual showroom for exploring a vehicle from every angle.</p>
+                </div>
+
+                <div class="screenshot-item">
+                    <span class="frame-number">03</span>
+                    <img src="Rent_Car_Page.png" alt="Replace with a short description of this screenshot" loading="lazy">
+                    <p class="screenshot-caption">Write what this screen shows — e.g. the ML-powered price prediction tool with model output.</p>
+                </div>
+
+                <div class="screenshot-item">
+                    <span class="frame-number">04</span>
+                    <img src="Damage_Detection_Page.png" alt="Replace with a short description of this screenshot" loading="lazy">
+                    <p class="screenshot-caption">Write what this screen shows — e.g. the vehicle damage detection results from the CV model.</p>
+                </div>
+
+                <div class="screenshot-item">
+                    <span class="frame-number">05</span>
+                    <img src="Price_Predictor.png" alt="Replace with a short description of this screenshot" loading="lazy">
+                    <p class="screenshot-caption">Write what this screen shows — e.g. the vehicle damage detection results from the CV model.</p>
+                </div>
+
+                <div class="screenshot-item">
+                    <span class="frame-number">06</span>
+                    <img src="Chatbot_Page.png" alt="Replace with a short description of this screenshot" loading="lazy">
+                    <p class="screenshot-caption">Write what this screen shows — e.g. the vehicle damage detection results from the CV model.</p>
+                </div>
+
+                <!-- Add more <div class="screenshot-item">...</div> blocks below as needed -->
+
+            </div>
+
+            <div class="back-to-portfolio-bottom">
+                <a href="index.html" class="button">← Back to Main Portfolio</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aditya Sarmalkar. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

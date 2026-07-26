@@ -6,21 +6,6 @@
 
    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
-   /* ==========================================
-   RESET
-    ========================================== */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Remove blue tap flash on mobile */
-*{
-    -webkit-tap-highlight-color: transparent;
-}
-
    :root{
      /* --- palette --- */
      --ink:        #06070d;
@@ -61,7 +46,7 @@
    /* ==========================================================================
       Reset & base
       ========================================================================== */
-   *, *::before, *::after{ box-sizing: border-box; margin: 0; padding: 0; }
+   *, *::before, *::after{ box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent }
    
    html{
      scroll-behavior: smooth;

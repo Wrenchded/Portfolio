@@ -52,6 +52,7 @@
      scroll-behavior: smooth;
      -webkit-font-smoothing: antialiased;
      text-rendering: optimizeLegibility;
+     -webkit-tap-highlight-color: transparent;
    }
    
    body{
@@ -61,6 +62,7 @@
      line-height: 1.6;
      font-size: 16px;
      overflow-x: hidden;
+     -webkit-tap-highlight-color: transparent;
    }
    
    img{ max-width: 100%; display: block; }
@@ -72,6 +74,10 @@
    button{ font-family: inherit; cursor: pointer; border: none; background: none; }
    
    input, textarea{ font-family: inherit; }
+   
+   a, button, .button, .back-to-home, .skill-item, .project, .screenshot-item, input, textarea{
+     -webkit-tap-highlight-color: transparent;
+   }
    
    ::selection{ background: var(--violet); color: #fff; }
    
@@ -2076,4 +2082,3 @@ body{
 
     overflow-x:hidden;
 }
-  
